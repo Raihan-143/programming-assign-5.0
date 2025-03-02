@@ -7,10 +7,9 @@ function updateDate() {
 }
 
 updateDate();
-// Select the theme button
-const themeButton = document.querySelector("img[src='assets/theme-btn.png']");
 
-// Function to generate a random color
+// for the changing background color
+const themeButton = document.querySelector("img[src='assets/theme-btn.png']");
 function getRandomColor() {
     const letters = "0123456789ABCDEF";
     let color = "#";
@@ -19,10 +18,7 @@ function getRandomColor() {
     }
     return color;
 }
-
-// Add click event listener to the theme button
 themeButton.addEventListener("click", function () {
-    // Change the background color of the body randomly
     document.body.style.backgroundColor = getRandomColor();
 });
 
