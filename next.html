@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Answering Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header>
+        <section class="p-5 mb-5 box  bg-[#FFFFFF] rounded-md shadow-md">
+            <nav class="flex justify-between items-center mx-auto max-w-6xl">
+                <div class="flex gap-1  items-center">
+                    <img class="w-8" src="assets/logo.png" alt="">
+                    <h1 class="">Dev<span class="font-semibold">Board</span></h1>
+                </div>
+                </div>
+                    <button onclick="history.back()" class="text-white bg-sky-700 rounded-md p-2 cursor-pointer">Back to Desk</button>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <section class="mt-10">
+        <h1 class="text-center font-bold">Blogs</h1>
+        <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="collapse-content text-sm">There are many selective element in DOM(getElementByID,getElementsByClassName,getElementsByTagName).So the 
+                using in different purpose for different selctor.
+            </div>
+          </div>
+          <div>
+          <!--Qstn 2-->
+          <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+            </div>
+            <div class="collapse-content text-sm">
+                <h3 class="text-sky-600">InnerHTML</h3>
+                <p>Returns or sets the HTML content inside an element.</p>
+                <h3 class="text-sky-600">InnerText</h3>
+                <p>Returns or sets the visible text inside an element, excluding hidden elements</p>
+               <h3 class="text-sky-600"> TextContent</h3>
+                <p>Returns or sets all text inside an element, including hidden text, without parsing HTML.</p>
+            </div>
+          </div>
+          <!--Qstn 3-->
+          <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?</div>
+            <div class="collapse-content text-sm">
+            Event delegation is process in JavaScript where instead of  adding even listener to multiple child element.
+            </div>
+          </div>
+          <!--Qstn 4-->
+          <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?</div>
+            <div class="collapse-content text-sm">
+            Event bubbling is a mechanism in the DOM where an event starts from the target element and propagates upwards through its
+             ancestor elements until it reaches the document object.
+            </div>
+          </div>
+          <!--Qstn 5-->
+          <div class="collapse bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-1" checked="checked" />
+            <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+            <div class="collapse-content text-sm">
+            In JavaScript, where I can manipulate the DOM dynamically using various methods to create, add, and remove elements.
+            </div>
+          </div>          
+    </section>
+</body>
+</html>

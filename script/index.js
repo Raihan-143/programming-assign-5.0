@@ -7,3 +7,22 @@ function updateDate() {
 }
 
 updateDate();
+// Select the theme button
+const themeButton = document.querySelector("img[src='assets/theme-btn.png']");
+
+// Function to generate a random color
+function getRandomColor() {
+    const letters = "0123456789ABCDEF";
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+// Add click event listener to the theme button
+themeButton.addEventListener("click", function () {
+    // Change the background color of the body randomly
+    document.body.style.backgroundColor = getRandomColor();
+});
+

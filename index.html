@@ -22,124 +22,129 @@
 </head>
 <body class="bg-[#FFFFFF] poppins-medium">
     <header>
-        <section class="p-5 mb-5 box  bg-[#FFFFFF] rounded-md ">
-            <nav class="flex justify-around mx-auto">
-                <div class="flex gap-1 justify-center items-center">
+        <section class="p-5 mb-5 box  bg-[#FFFFFF] rounded-md shadow-md">
+            <nav class="flex justify-between items-center mx-auto max-w-6xl">
+                <div class="flex gap-1  items-center">
                     <img class="w-8" src="assets/logo.png" alt="">
                     <h1 class="">Dev<span class="font-semibold">Board</span></h1>
                 </div>
-                <div class="flex gap-4 justify-center items-center">
-                    <div class="flex gap-2 box p-2 bg-[#F4F7FF] rounded-md">
+                <div class="flex gap-4  items-center">
+                    <div class="flex gap-2 box p-2 bg-[#F4F7FF] rounded-md shadow">
                     <img class="w-[16px] mx-auto" src="assets/checkbox.png" alt="">
-                    <p class="font-bold"> 23</p>
+                    <p id="mark-1" class="font-bold"> 23</p>
                 </div>
-                    <img class="w-[32px] mx-auto" src="assets/theme-btn.png" alt="">
+                    <img class="w-[32px] mx-auto cursor-pointer" src="assets/theme-btn.png" alt="">
                 </div>
             </nav>
-           
-
         </section>
-
     </header>
-    <main>
-        <section>
-            <div class="cards grid grid-cols-3 gap-2">
-                <!-- Card 1 -->
-                <div class="flex justify-center items-center gap-4 box border p-4 rounded-sm bg-[#F4F7FF] shadow">
-                    <img class="w-8" src="assets/checkbox.png" alt="">
-                    <h3 class="text-[#00303C]">Task Assigned <br> <span class="font-bold">6</span></h3>
+    <main  class="max-w-7xl mx-auto grid grid-cols-3 gap-6>
+          <section class="grid grid-cols-2 gap-4">
+            <section class="col-span-3">
+        <!-- <section class="container mx-auto mt-10"> -->
+            <!-- <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"> -->
+                <div class="grid grid-cols-3 gap-6 mb-6">
+                    <!-- Card 1 -->
+                    <div class="flex justify-center items-center gap-4 box border p-4 rounded-sm bg-[#F4F7FF] shadow">
+                        <img class="w-8" src="assets/checkbox.png" alt="">
+                        <h3 class="text-[#00303C]">Task Assigned <br> <span id="main-mark" class="font-bold">6</span></h3>
+                    </div>
+            
+                    <!-- Card 2 -->
+                    <div id="next-page" class="bg-gradient-to-r cursor-pointer from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center gap-4 box border rounded-sm p-4 shadow">
+                        <img class="w-8" src="assets/board.png" alt="">
+                        <h3 class="text-[#FFFFFF] ">Discover Something New Today!</h3>
+                    </div>
+            
+                    <!-- Card 3-->
+                    <div class="flex justify-center items-center gap-4 box border p-4 rounded-sm bg-[#F4F7FF] shadow">
+                        <img class="w-8" src="assets/calender.png" alt="">
+                        <h3 class="text-[#00303C]">
+                            <span id="current-day"></span>,<br>
+                            <span class="font-bold" id="current-date"></span>
+                        </h3>
+                    </div>
                 </div>
-        
-                <!-- Card 2 -->
-                <div class="bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center gap-4 box border rounded-sm p-4 shadow">
-                    <img class="w-8" src="assets/board.png" alt="">
-                    <h3 class="text-[#FFFFFF] ">Discover Something New Today!</h3>
-                </div>
-        
-                <!-- Card 3 (Dynamic Date) -->
-                <div class="flex justify-center items-center gap-4 box border p-4 rounded-sm bg-[#F4F7FF] shadow">
-                    <img class="w-8" src="assets/calender.png" alt="">
-                    <h3 class="text-[#00303C]">
-                        <span id="current-day"></span>,<br>
-                        <span class="font-bold" id="current-date"></span>
-                    </h3>
-                </div>
-            </div>
-        </section>
-        
-        <section class="container mx-auto mt-10">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Card 1 -->
+                <div class="grid grid-cols-3 gap-6">
+                <!-- box 1 -->
                 <div class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
                     <h5 class="text-[#00303C] bg-white px-3 py-1 rounded-md inline-block font-medium text-sm shadow">ShopEase</h5>
                     <h2 class="text-2xl text-[#00303C] font-bold mt-2">Fix Mobile Button Issue</h2>
                     <p class="text-stone-400 bg-white rounded-md p-3 mt-3 shadow">Debug using Chrome DevTools, check for overlapping...</p>
                     <div class="flex justify-between items-center mt-5">
                         <p class="text-stone-400 text-sm">Deadline <br> <span class="text-[#00303C] font-bold">21 March 2025</span></p>
-                        <button class="text-white bg-[#3752FD] rounded-md px-4 py-2 text-sm font-medium shadow">Completed</button>
+                        <button id="btn-1" class="text-white bg-[#3752FD] rounded-md px-4 py-2 text-sm font-medium shadow">Completed</button>
                     </div>
                 </div>
         
-                <!-- Card 2 -->
+                <!-- box 2 -->
                 <div class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
                     <h5 class="text-[#00303C] bg-white px-3 py-1 rounded-md inline-block font-medium text-sm shadow">CloudSync</h5>
                     <h2 class="text-2xl text-[#00303C] font-bold mt-2">Add Dark Mode</h2>
                     <p class="text-stone-400 bg-white rounded-md p-3 mt-3 shadow">Store the user's preference in localStorage, update CSS variables...</p>
                     <div class="flex justify-between items-center mt-5">
                         <p class="text-stone-400 text-sm">Deadline <br> <span class="text-[#00303C] font-bold">21 March 2025</span></p>
-                        <button class="text-white bg-gray-300 rounded-md px-4 py-2 text-sm font-medium shadow">Completed</button>
+                        <button  id="btn-2" class="text-white bg-[#3752FD] rounded-md px-4 py-2 text-sm font-medium shadow">Completed</button>
                     </div>
                 </div>
         
-                <!-- Card 3 -->
+                <!-- box 3 -->
                 <div class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
                     <h5 class="text-[#00303C] bg-white px-3 py-1 rounded-md inline-block font-medium text-sm shadow">SwiftPay</h5>
                     <h2 class="text-2xl text-[#00303C] font-bold mt-2">Optimize Home Page</h2>
                     <p class="text-stone-400 bg-white rounded-md p-3 mt-3 shadow">Debug using Chrome DevTools, check for overlapping...</p>
                     <div class="flex justify-between items-center mt-5">
                         <p class="text-stone-400 text-sm">Deadline <br> <span class="text-[#00303C] font-bold">21 March 2025</span></p>
-                        <button class="text-white bg-[#3752FD] rounded-md px-4 py-2 text-sm font-medium shadow">Completed</button>
+                        <button  id="btn-3" class="text-white bg-[#3752FD] rounded-md px-4 py-2 text-sm font-medium shadow">Completed</button>
                     </div>
                 </div>
         
-                <!-- Card 4 -->
+                <!-- box4 -->
                 <div class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
                     <h5 class="text-[#00303C] bg-white px-3 py-1 rounded-md inline-block font-medium text-sm shadow">Meta</h5>
                     <h2 class="text-2xl text-[#00303C] font-bold mt-2">Add new emoji ✋</h2>
                     <p class="text-stone-400 bg-white rounded-md p-3 mt-3 shadow">Debug using Chrome DevTools, check for overlapping...</p>
                     <div class="flex justify-between items-center mt-5">
                         <p class="text-stone-400 text-sm">Deadline <br> <span class="text-[#00303C] font-bold">21 March 2025</span></p>
-                        <button class="text-white bg-[#3752FD] rounded-md px-4 py-2 text-sm font-medium shadow">Completed</button>
+                        <button  id="btn-4" class="text-white bg-[#3752FD] rounded-md px-4 py-2 text-sm font-medium shadow">Completed</button>
                     </div>
                 </div>
         
-                <!-- Card 5 -->
+                <!-- box 5 -->
                 <div class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
                     <h5 class="text-[#00303C] bg-white px-3 py-1 rounded-md inline-block font-medium text-sm shadow">Google LLC</h5>
                     <h2 class="text-2xl text-[#00303C] font-bold mt-2">Integrate OpenAI API</h2>
                     <p class="text-stone-400 bg-white rounded-md p-3 mt-3 shadow">Debug using Chrome DevTools, check for overlapping...</p>
                     <div class="flex justify-between items-center mt-5">
                         <p class="text-stone-400 text-sm">Deadline <br> <span class="text-[#00303C] font-bold">21 March 2025</span></p>
-                        <button class="text-white bg-[#3752FD] rounded-md px-4 py-2 text-sm font-medium shadow">Completed</button>
+                        <button  id="btn-5" class="text-white bg-[#3752FD] rounded-md px-4 py-2 text-sm font-medium shadow">Completed</button>
                     </div>
                 </div>
         
-                <!-- Card 6 -->
+                <!-- box 6 -->
                 <div class="bg-[#F4F7FF] p-6 rounded-lg shadow-md">
                     <h5 class="text-[#00303C] bg-white px-3 py-1 rounded-md inline-block font-medium text-sm shadow">Glassdoor</h5>
                     <h2 class="text-2xl text-[#00303C] font-bold mt-2">Improve Job Searching</h2>
                     <p class="text-stone-400 bg-white rounded-md p-3 mt-3 shadow">Debug using Chrome DevTools, check for overlapping...</p>
                     <div class="flex justify-between items-center mt-5">
                         <p class="text-stone-400 text-sm">Deadline <br> <span class="text-[#00303C] font-bold">21 March 2025</span></p>
-                        <button class="text-white bg-[#3752FD] rounded-md px-4 py-2 text-sm font-medium shadow">Completed</button>
+                        <button  id="btn-6" class="text-white bg-[#3752FD] rounded-md px-4 py-2 text-sm font-medium shadow">Completed</button>
                     </div>
                 </div>
             </div>
         </section>
-        
-
+        <section class="active bg-[#F4F7FF] p-6 rounded-lg shadow-md mt-10">
+            <div class="flex justify-center items-center text-center gap-4">
+                <img class="w-8 mb-2" src="assets/activity.png" alt="">
+                <p class="">Activity Log</p>
+            </div>
+            <button id="clear-btn" class="text-white box bg-[#3752FD] rounded-md p-2 mt-5 w-full">Clear History</button>
+        </section>
+    </section> 
     </main>
     <script src="script/index.js"></script>
-    
+    <script src="script/next.js"></script>
+    <script src="script/add-sub.js"></script>
+
 </body>
 </html>
